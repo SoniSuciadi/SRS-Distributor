@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/id_barang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sssssss"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nama_barang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/id_barang_item"
+
+            android:text="sssssss"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_barang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_barang_item"
+            android:layout_marginLeft="-42dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toRightOf="@id/id_barang_item"
+            android:text="sssssssssssssss"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_barang_item"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/harga_barang_item"
+            android:text="X"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jumlah_barang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_barang_item"
+            android:layout_toRightOf="@id/x"
+            android:text="ssssssssss"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_barang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_barang_item"
+            android:layout_alignParentRight="true"
+            android:text="hhhh"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

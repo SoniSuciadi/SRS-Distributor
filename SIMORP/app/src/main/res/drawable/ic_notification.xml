@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/ic_baseline_notifications_none_24"
+        android:width="100dp" android:height="100dp"
+        />
+
+</layer-list>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btn_back_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Income"
+                android:textColor="@color/secondaryColor"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/date_picker"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/appBar_income"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textfield_border"
+        android:padding="4dp"
+        android:textSize="24sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_search_income"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/appBar_income"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/date_picker"
+        android:background="@drawable/backgroundbutton"
+        android:drawableTop="@drawable/ic_baseline_search_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_income"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@id/date_picker"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        tools:listitem="@layout/item_card_pesanan" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Total Penjualan:  "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_ket"
+            android:text=""
+
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

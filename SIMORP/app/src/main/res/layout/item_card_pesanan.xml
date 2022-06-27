@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/backgroundbutton">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/l_idpesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Pesanan           : "
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/l_pemesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_idpesanan"
+                android:layout_marginTop="8dp"
+                android:text="Pemesan               : "
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/l_tanggalpesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_pemesan"
+                android:layout_marginTop="8dp"
+                android:text="Tanggal Pesanan : "
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/l_totalHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_tanggalpesanan"
+                android:layout_marginTop="8dp"
+                android:text="Total Pesanan       : "
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_isi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_label"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/id_pesanan_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pemesan_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_pesanan_cart"
+                android:layout_marginTop="8dp"
+                android:text="03-08-2000"
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tanggal_pesanan_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pemesan_cart"
+                android:layout_marginTop="8dp"
+                android:text="03-08-2000"
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_harga_pesanan_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tanggal_pesanan_cart"
+                android:layout_marginTop="8dp"
+                android:text="1000000"
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/status_pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="42dp"
+            android:layout_toRightOf="@id/rl_isi"
+            android:text="Belum DIterima"
+            android:textAlignment="textEnd"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

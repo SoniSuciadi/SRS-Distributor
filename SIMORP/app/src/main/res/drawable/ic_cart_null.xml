@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/cart_null"
+        android:width="200dp" android:height="300dp"
+        />
+
+</layer-list>
